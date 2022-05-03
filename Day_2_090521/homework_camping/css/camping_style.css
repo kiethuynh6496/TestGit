@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* chỉ apply cho padding, đẩy từ ngoài vào trong so với
+    border, kiểu ép content */
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 14px;
+    background-color: #FAF4F2;
+}
+
+.header{
+    background-color: white;
+    padding: 10px 70px;
+}
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* bỏ repeat nếu như có khoảng trống */
+    height: 500px;
+    border-radius: 0 0 200px 200px;
+    /* div 1 block lớn nên ko inline */
+    /* max 5 level css */
+    position: relative;
+}
+
+/* Float */
+.carousel .carousel__item{ /*bỏ level trung gian*/
+    float: left;
+    /* set đủ width mỗi item = full width */
+    width: 25%;
+    /* background-color: aliceblue; */
+    /* border-radius: 50px; */
+    /* margin: 15px; */
+    /* div sẽ mang mặc định size của cha nó */
+    padding: 15px; /*appy cho box-sizing*/
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.carousel__detail{
+    background-color: white;
+    border-radius: 20px;
+    /* margin: 15px; */
+    padding: 10px;
+    text-align: center;
+    /* position: absolute; */
+}
+
+.carousel .carousel__detail img{
+    width: 60px;
+    height: 60px;
+}
+
+.carousel .carousel__content{
+    position: absolute;
+    bottom: -135px;
+}
+
+/* thuộc tính position 
+con sẽ là relative -> tìm cấp cao hơn của nó là
+absolute
+*/
+/* END CAROUSEL */
+
+/* ACTIVITIES */
+.activities{
+    margin-top: 180px;
+}
+
+.activities .activities__title{
+    text-align: center;
+    color: #8d8d8d;
+    margin-bottom: 20px;
+}
+
+.activities .activities__title img{
+    width: 70px;
+}
+
+.activities .activities__item{
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+.activities .activites_card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.activities .activities__content .activities__list .activities__item img{
+    width: 100%;
+    /* dùng trong trường hợp khi ảnh nó to hơn thì thu nó cho vừa
+    còn dùng width 100% khi nó nhỏ hơn thì nó sẽ phóng ra cho vừa*/
+    /* max-width: 100%; */
+    border-radius: 10px;
+}
+
+.activities .activities__img{
+    position: relative;
+}
+
+.activities .activities__love{
+    position: absolute;
+    /* line-height: 42px; */
+    text-align: center; /*căn giua theo chieu ngang*/
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 30px;
+    height: 30px;
+    /* padding: 10px; */
+    line-height: 30px; /*những line bên trong sẽ được căn
+    giữa theo chiều dọc (bên ngoài đã set width và height = 30)
+    và muốn phần tử bên trong nằm giữa theo chiều dọc*/
+    border-radius: 8px;
+    /* opacity: 0.5; */
+}
+
+.activities .activities__love i{
+    color: #e76f51;
+}
+
+.activities .activities__detail button{
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.activities .activities__detail button:hover{
+    background-color: #e76f51;
+}
+/* END ACTIVITIES */

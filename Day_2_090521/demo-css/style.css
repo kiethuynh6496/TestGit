@@ -1,0 +1,20 @@
+/* tag: 1 */
+/* class: 10 */
+/* id: 100 */
+#title1 {
+    background-color: black;
+    color: white;
+}
+
+/* class: . */
+.title1 {
+    background-color: pink;
+    color: aquamarine;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+}
+
+/* id: # */
